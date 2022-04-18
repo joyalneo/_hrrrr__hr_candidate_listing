@@ -1,9 +1,9 @@
-import React from 'react'
-import candidate_listing from './candidate_listing'
+import React from 'react';
+import Candidates from './components/candidates/Candidates.js';
 export default function App() {
   return (
     <div>
-      <candidate_listing/>
+      <Candidates />
     </div>
-  )
+  );
 }
