@@ -6,7 +6,7 @@ const EditModal = (props) => {
   const system = {
     module: './editmodal',
     scope: 'editmodal',
-    url: 'http://localhost:3003/remoteEntry.js',
+    url: `${process.env.BLOX_ENV_URL_edit_modal}/remoteEntry.js`,
   };
 
   const { Component: FederatedComponent, errorLoading } = useFederatedComponent(
