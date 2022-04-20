@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Candidates from './components/candidates/Candidates.js';
 export default function App() {
   return (
-    <div>
+    <Suspense fallback=''>
       <Candidates />
-    </div>
+    </Suspense>
   );
 }
