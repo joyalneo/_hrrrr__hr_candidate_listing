@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy } from 'react';
-import useOnclickOutside from 'react-cool-onclickoutside';
+// import useOnclickOutside from 'react-cool-onclickoutside';
 import CandidateDetailsModal from '../modals/candidate-details-modal.js';
 import ConfirmModal from '../modals/confirm-modal.js';
 import Avatar from '../../assets/img/avatar.svg';
@@ -11,7 +11,7 @@ import EditIcon from '../../assets/img/icons/edit.svg';
 import DeleteIcon from '../../assets/img/icons/delete.svg';
 import Axios from 'axios';
 import PlusIcon from '../../assets/img/icons/plus-icon.svg';
-const EditModal = lazy(() => import('../edit-modal/index.js'));
+import EditModal from '../edit-modal/index.js';
 
 import './Candidates.scss';
 
@@ -25,9 +25,9 @@ const CandidateList = (props) => {
   const [selected, setSelected] = useState(null);
   const [candidateNewModal, setCandidateNewModal] = useState(false);
   const [current, setCurrent] = useState(null);
-  const actionDropContainer = useOnclickOutside(() => {
-    setActionDropdown(null);
-  });
+  // const actionDropContainer = useOnclickOutside(() => {
+  //   setActionDropdown(null);
+  // });
   const handleActionDropdown = (id) => {
     if (id === actionDropdown) {
       setActionDropdown(null);
@@ -122,7 +122,7 @@ const CandidateList = (props) => {
                   <div
                     onClick={(e) => e.stopPropagation()}
                     className='relative flex-shrink-0'
-                    ref={actionDropContainer}
+                    // ref={actionDropContainer}
                   >
                     <img
                       onClick={() => handleActionDropdown(item)}

@@ -16,6 +16,8 @@ const EditModal = (props) => {
     React
   );
 
+  console.log(FederatedComponent);
+
   return (
     <React.Suspense fallback={''}>
       {errorLoading
@@ -23,9 +25,9 @@ const EditModal = (props) => {
         : FederatedComponent &&
           props && (
             <FederatedComponent
-              candidateNewModal={candidateNewModal}
-              current={current}
-              handleCandidateNewModal={handleCandidateNewModal}
+    candidateNewModal={candidateNewModal}
+    current={current}
+    handleCandidateNewModal={handleCandidateNewModal}
             />
           )}
     </React.Suspense>
