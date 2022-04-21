@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "ab-federation-helpers": "git+https://github.com/Appblox/ab-federation-helpers.git",
-    "node-blox-sdk": "git+https://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:x-oauth-basic@github.com/Appblox/node-blox-sdk.git",
+    "node-blox-sdk": "git+https://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:x-oauth-basic@github.com/Appblox/node-blox-sdk.git",
     "react": "^17.0.2",
     "react-cool-onclickoutside": "^1.7.0",
     "react-dom": "^17.0.2",

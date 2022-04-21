@@ -16,7 +16,7 @@ export default {
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 3002,
+    port: 3003,
   },
   externals: {
     env: JSON.stringify(process.env),
